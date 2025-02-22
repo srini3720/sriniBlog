@@ -45,7 +45,7 @@ export function GET(request: Request) {
                 fontSize: 20,
               }}
             >
-              coding-jitsu-blog.com
+              srini.dev
             </span>
           </div>
           <div
