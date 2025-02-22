@@ -10,16 +10,25 @@ import SkeletonCard from "@/components/skeleton/popular_posts_skeleton";
 export default function PopularPosts() {
   const { data, error, isLoading } = useSWR(fetchUrl, fetcher);
 
-  if (error) return <div>Failed to load</div>;
+  if (error) return <div>
+                      <ul className="overflow-auto w-min-content">
+                            <Link href="/">
+                              <li className="flex items-center gap-2 group cursor-pointer py-2">
+                                <Icons.arrowRight className="h-6 w-6 group-hover:translate-x-1 transition-all" />
+                                <p className="w-[180px]">No Content Found</p>
+                              </li>
+                            </Link>
+                      </ul>
+                    </div>;
   if (isLoading) return <SkeletonCard />;
 
   return (
-    <ul className="overflow-auto">
+    <ul className="overflow-auto w-min-content">
       {data?.map((post: { category: string; slug: string; title: string }) => (
         <Link href={`/blog/${post.category}/${post.slug}`} key={post.title}>
           <li className="flex items-center gap-2 group cursor-pointer py-2">
             <Icons.arrowRight className="h-6 w-6 group-hover:translate-x-1 transition-all" />
-            <p>{post.title}</p>
+            <p className="w-[300px]">{post.title}</p>
           </li>
         </Link>
       ))}
