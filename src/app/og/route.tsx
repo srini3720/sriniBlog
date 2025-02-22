@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export function GET(request: Request) {
   let url = new URL(request.url);
-  let title = url.searchParams.get("title") || "Next.js and MDX Blog";
+  let title = url.searchParams.get("title") || "Srini Blogs";
 
   try {
     return new ImageResponse(
@@ -59,8 +59,8 @@ export function GET(request: Request) {
               width: "auto",
               maxWidth: 550,
               textAlign: "center",
-              backgroundColor: "black",
-              color: "white",
+              backgroundColor: "white",
+              color: "black",
               lineHeight: 1.4,
             }}
           >
