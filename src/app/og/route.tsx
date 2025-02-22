@@ -92,7 +92,6 @@ export function GET(request: Request) {
               maxWidth: 900,
               textAlign: "center",
               backgroundColor: "rgba(0, 0, 0, 0.6)", // Dark overlay for contrast
-              padding: "20px",
               borderRadius: "12px",
               boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.3)", // Subtle shadow
               color: "white",
