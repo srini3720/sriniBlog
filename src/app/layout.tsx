@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
 import { siteConfig } from "@/config/site";
-
+import Providers from "@/app/providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,11 +24,11 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Coding Jitsu",
-      url: "https://github.com/codingjitsu",
+      name: "Srinivasan Shanmugam",
+      url: "https://github.com/srini3720",
     },
   ],
-  creator: "coding jitsu",
+  creator: "Srinivasan Shanmugam",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -43,7 +42,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${siteConfig.url}/og`],
-    creator: "@codingJitsu",
+    creator: "@srini3720",
   },
   icons: {
     icon: "/favicon.ico",
@@ -59,16 +58,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </ThemeProvider>
+      <link rel="canonical" href="https://srini.dev" />
+      <body
+        className={inter.className}
+      >
+         <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -1,28 +1,40 @@
-import Container from "@/components/Container";
-import LatestPosts from "@/components/home/latest-posts";
-import PopularPosts from "@/components/home/popular-posts";
-import TopCatogories from "@/components/home/top-categories";
-import { MainNav } from "@/components/main-nav";
+// import { About } from "./components/About";
+// import { Cta } from "./components/Cta";
+// import { FAQ } from "./components/FAQ";
+// import { Features } from "./components/Features";
+// import { Footer } from "./components/Footer";
+import { Hero } from "@/components/Hero";
+// import { HowItWorks } from "./components/HowItWorks";
+import { Navbar } from "@/components/Navbar";
+// import { Newsletter } from "./components/Newsletter";
+// import { Pricing } from "./components/Pricing";
+// import { ScrollToTop } from "./components/ScrollToTop";
+// import { Services } from "./components/Services";
+// import { Sponsors } from "./components/Sponsors";
+// import { Team } from "./components/Team";
+// import { Testimonials } from "./components/Testimonials";
+import "./index.css"
 
-export default function Home() {
+function App() {
   return (
-    <Container>
-      <MainNav />
-      <main className="flex flex-col items-start justify-evenly mt-16 md:flex-row">
-        <div>
-          <LatestPosts />
-        </div>
-        <div className="h-screen">
-          <div>
-            <h1 className="font-bold mb-4">TOP CATEGORIES</h1>
-            <TopCatogories />
-          </div>
-          <div className="mt-10 sticky top-0">
-            <h1 className="font-bold mb-4">POPULAR POSTS</h1>
-            <PopularPosts />
-          </div>
-        </div>
-      </main>
-    </Container>
+    <>
+      <Navbar />
+      <Hero />
+      {/* <Sponsors />
+      <About />
+      <HowItWorks />
+      <Features />
+      <Services />
+      <Cta />
+      <Testimonials />
+      <Team />
+      <Pricing />
+      <Newsletter />
+      <FAQ />
+      <Footer />
+      <ScrollToTop /> */}
+    </>
   );
 }
+
+export default App;
