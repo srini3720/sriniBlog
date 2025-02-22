@@ -12,9 +12,9 @@ type SiteConfig = {
 export const siteConfig: SiteConfig = {
   name: "Srinivasan Shanmugam Blog",
   description:
-    "An Open source Technical Blog platform with Next.js 14 with shadcn/ui, prisma and markdown support.",
-  url: "https://next-blog-cj.vercel.app/",
-  ogImage: "https://next-blog-cj.vercel.app/og",
+    "Srini Blogs – A technical blog and portfolio where I share my passion for coding, exploring new technologies, and building innovative solutions.",
+  url: "https://srini.dev/",
+  ogImage: "https://srini.dev/og",
   links: {
     twitter: "https://twitter.com/srini3720",
     github: "https://github.com/srini3720",
