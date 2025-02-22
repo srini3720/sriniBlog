@@ -10,13 +10,13 @@ type SiteConfig = {
 };
 
 export const siteConfig: SiteConfig = {
-  name: "Coding Jitsu Blog",
+  name: "Srinivasan Shanmugam Blog",
   description:
     "An Open source Technical Blog platform with Next.js 14 with shadcn/ui, prisma and markdown support.",
   url: "https://next-blog-cj.vercel.app/",
   ogImage: "https://next-blog-cj.vercel.app/og",
   links: {
-    twitter: "https://twitter.com/codingjitsu",
-    github: "https://github.com/codingjitsu",
+    twitter: "https://twitter.com/srini3720",
+    github: "https://github.com/srini3720",
   },
 };

@@ -1,35 +1,32 @@
 export const POSTS: { title: string; href: string; description: string }[] = [
   {
-    title: "React",
-    href: "/blog/react",
-    description:
-      "Learn React.js and Next.js in a simple to understand articles",
+    title: "AI",
+    href: "/blog/AI",
+    description: "Explore the latest advancements and applications of Artificial Intelligence.",
   },
   {
-    title: "Javascript",
-    href: "/blog/javascript",
-    description: "Learn what are new in the javascript world",
+    title: "Blockchain",
+    href: "/blog/Blockchain",
+    description: "Understand blockchain technology, cryptocurrencies, and decentralized applications.",
   },
   {
-    title: "CSS",
-    href: "/blog/css",
-    description: "Everything about CSS and the new features.",
+    title: "Quantum",
+    href: "/blog/Quantum",
+    description: "Dive into quantum computing, mechanics, and their impact on future technologies.",
   },
   {
-    title: "Performance",
-    href: "/blog/performance",
-    description: "How to make your next app Blazing fast",
+    title: "Business",
+    href: "/blog/Business",
+    description: "Insights on scaling businesses, startup strategies, and market trends.",
   },
   {
-    title: "Animation",
-    href: "/blog/animations",
-    description:
-      "Everything you need to know about animations. We are going to learn about animation library like framer motion, GSAP and many more.",
+    title: "SaaS",
+    href: "/blog/saas",
+    description: "Everything about building, scaling, and marketing Software-as-a-Service (SaaS) products.",
   },
   {
-    title: "Career",
-    href: "/blog/career",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title: "Technical",
+    href: "/blog/Technical",
+    description: "A guide to technical blog about cloud hosting, server management, and deployment best practices.",
   },
 ];

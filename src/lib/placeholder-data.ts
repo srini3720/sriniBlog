@@ -1,23 +1,23 @@
 export const categories = [
-  "react",
-  "javascript",
-  "css",
-  "animation",
-  "performance",
-  "database",
+  "AI",
+  "Blackchain",
+  "Quantum",
+  "Business",
+  "SaaS",
+  "Technical",
 ];
 
 export const popularPosts = [
   {
-    title: "Spaces vs. Tabs: The Indentation Debate Continues",
+    title: "AI: Self-Hosting vs. API",
   },
   {
-    title: "Spaces vs. Tabs: The Indentation Debate Continues",
+    title: "AI-Powered Sentiment Analysis for Brand Reputation",
   },
   {
-    title: "Spaces vs. Tabs: The Indentation Debate Continues",
+    title: "Unlocking the Potential of SaaS",
   },
   {
-    title: "The Power of Static Typing in Programming",
+    title: "Exploring the Potential of Quantum Chips",
   },
 ];
