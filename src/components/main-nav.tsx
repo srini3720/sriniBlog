@@ -28,8 +28,8 @@ export function MainNav({ className }: { className?: string }) {
     >
       <Link href={"/"}>
         <div className="flex items-center justify-between w-32">
-          <Icons.logo className="h-6 w-6" />
-          <p>Coding Jitsu</p>
+          {/* <Icons.logo className="h-6 w-6" /> */}
+          <p>Srinivasan Shanmugam</p>
         </div>
       </Link>
       <NavigationMenu>
