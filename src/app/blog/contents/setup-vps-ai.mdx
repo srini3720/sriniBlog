@@ -1,0 +1,108 @@
+---
+title: "Setting Up a VPS to Run AI Models"
+publishedAt: "2025-03-01"
+summary: "Learn how to set up a VPS and deploy AI models efficiently. This guide walks you through SSH access, package updates, and deploying models using Ollama and Coolify."
+category: "AI"
+---
+
+# **Deploying AI Models on a VPS: A Step-by-Step Guide**
+
+In the AI era, running models on a Virtual Private Server (VPS) allows for scalable, cost-effective deployments. Whether you're experimenting or deploying AI-powered applications, this guide walks you through setting up your VPS, installing AI models, and running them with both command-line and GUI-based solutions.
+
+## **Why Choose a VPS for AI?**
+
+Hosting AI models on a VPS provides:
+- **Scalability:** Easily upgrade resources as needed.
+- **Cost Efficiency:** Avoid expensive cloud AI services.
+- **Customization:** Full control over installed packages and configurations.
+- **Accessibility:** Run AI models from anywhere.
+
+Let’s get started with setting up a VPS and running AI models.
+
+---
+
+## **Step 1: SSH into Your VPS**
+Once you've purchased a VPS from a provider like AWS, DigitalOcean, or Linode, access it using SSH.
+
+```bash
+ssh -i "path_to_your_private_key.pem" root@your_server_ip
+```
+
+If prompted, confirm the connection to establish secure access.
+
+---
+
+## **Step 2: Update and Upgrade Your System**
+Before installing any software, ensure your system is up-to-date.
+
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
+```
+
+This refreshes your package lists and installs any pending security patches or system updates.
+
+---
+
+## **Step 3: Installing & Running an AI Model Locally**
+If you want to run models in the terminal without a GUI, use **Ollama**, a lightweight model runner.
+
+### **Installing Ollama**
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+### **Running a Model**
+```bash
+ollama run deepseek-r1:7b
+```
+For detailed debugging:
+```bash
+ollama run deepseek-r1:7b --verbose
+```
+
+This command downloads and runs the **DeepSeek-R1 7B** model locally.
+
+---
+
+## **Step 4: Running AI Models with a GUI**
+For easier model management, use **Coolify**, a self-hosted platform that simplifies AI deployments.
+
+### **Installing Coolify**
+```bash
+curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
+```
+
+### **Accessing Coolify**
+After installation, navigate to:
+```plaintext
+http://your_server_ip:8000
+```
+
+### **Setting Up Coolify**
+1. **Create an Admin Account** – Enter your email and password.
+2. **Optional: Configure a Custom Domain** – Set up your domain in settings.
+3. **Create a New Service** – Click on ‘New Service’ and select **Ollama GUI**.
+
+### **Adding AI Models**
+1. **Sign in to the Ollama GUI**.
+2. **Click ‘Add Model’** and choose an open-source model.
+3. **Congratulations!** Your AI model is now self-hosted and accessible.
+
+---
+
+## **Final Thoughts**
+Setting up a VPS to run AI models provides full control over deployments, whether for personal use or enterprise solutions. This guide covered:
+- **SSH access and package updates**
+- **Running AI models locally with Ollama**
+- **Deploying AI models via GUI using Coolify**
+
+### **What’s Next?**
+In our next blog, we’ll explore advanced optimizations, including:
+- Fine-tuning AI models for better accuracy
+- Deploying models with GPUs for performance boosts
+- Automating deployments with Docker and Kubernetes
+
+Stay ahead in the AI revolution—start deploying your models today!
+
+---
+
