@@ -27,14 +27,14 @@ export const HeroCards = () => {
      <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Stock Trend
+            Stock Trio
             <a
               rel="noreferrer noopener"
-              href="https://stocktrend.net"
+              href="https://stocktrio.com"
               target="_blank"
             >
               <Badge variant="secondary" className="text-sm text-primary">
-                Stocktrend.net
+                Stocktrio
               </Badge>
               </a>
           </CardTitle>
@@ -46,7 +46,7 @@ export const HeroCards = () => {
           </CardDescription>
           <a
             rel="noreferrer noopener"
-            href="https://stocktrend.net"
+            href="https://stocktrio.com"
             target="_blank"
             className={`w-full border ${buttonVariants({
               variant: "secondary",
@@ -81,10 +81,10 @@ export const HeroCards = () => {
             <span className="inline cursor-pointer text-primary  font-bold bg-clip-text">
               <a
                 rel="noreferrer noopener"
-                href="https://app.stocktrend.net"
+                href="https://stocktrio.com"
                 target="_blank"
               >
-               Stocktrend.net
+               Stocktrio
               </a>
             </span>{" "}
             and{" "}
@@ -92,10 +92,10 @@ export const HeroCards = () => {
               <a
                 rel="noreferrer noopener"
 
-                href="https://11auth.com"
+                href="https://beta.supplychian.safrow.com/" 
                 target="_blank"
               >
-                11auth.com
+                11Auth
               </a>
             </span>{" "}
           </p>
@@ -236,11 +236,11 @@ export const HeroCards = () => {
             11Auth
             <a
               rel="noreferrer noopener"
-              href="https://11auth.com"
+              href="https://beta.supplychian.safrow.com/"
               target="_blank"
             >
               <Badge variant="secondary" className="text-sm text-primary">
-                11Auth.com
+                11Auth
               </Badge>
             </a>
           </CardTitle>
@@ -253,7 +253,7 @@ export const HeroCards = () => {
           </CardDescription>
           <a
             rel="noreferrer noopener"
-            href="https://11auth.com"
+            href="https://beta.supplychian.safrow.com/"
             target="_blank"
             className={`w-full border ${buttonVariants({
               variant: "secondary",
