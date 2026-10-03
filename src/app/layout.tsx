@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "@/styles/globals.css";
 import Footer from "@/components/footer";
 import { siteConfig } from "@/config/site";
@@ -65,6 +66,12 @@ export default function RootLayout({
          <Providers>
           {children}
         </Providers>
+        <Script
+          defer
+          src="https://analytics.host.safrow.com/script.js"
+          data-website-id="6356d5d9-5de6-44b5-bb16-49d1d4155259"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

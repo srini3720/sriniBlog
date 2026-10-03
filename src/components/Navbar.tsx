@@ -19,11 +19,18 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { ModeToggle } from "./mode-toggle";
 
+const sections = [
+  { href: "/#about", label: "About" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#writing", label: "Writing" },
+];
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
@@ -46,6 +53,16 @@ export const Navbar = () => {
                   <SheetTitle className="font-bold text-xl">Srinivasan Shanmugam</SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
+                  {sections.map((section) => (
+                    <a
+                      key={section.href}
+                      href={section.href}
+                      onClick={() => setIsOpen(false)}
+                      className={buttonVariants({ variant: "ghost" })}
+                    >
+                      {section.label}
+                    </a>
+                  ))}
                   <a
                     rel="noreferrer noopener"
                     href="https://github.com/srini3720"
@@ -61,7 +78,17 @@ export const Navbar = () => {
           </div>
 
           {/* Desktop */}
-          <nav className="hidden md:flex gap-2"></nav>
+          <nav className="hidden md:flex gap-1">
+            {sections.map((section) => (
+              <a
+                key={section.href}
+                href={section.href}
+                className={buttonVariants({ variant: "ghost", size: "sm" })}
+              >
+                {section.label}
+              </a>
+            ))}
+          </nav>
 
           <div className="hidden md:flex gap-2">
             <a
